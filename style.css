@@ -141,12 +141,14 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 .item-box {
     background-color: #fff9;
     border-radius: 40px;
     border: 2px solid #6666;
-    width: 360px;
+    width: 90%;
+    margin: 0 10px;
     height: 200px;
     box-sizing: border-box;
 }
@@ -236,7 +238,7 @@ body {
     }
     /*for desktop*/
 
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
         .home-container {
             flex-direction: row;
             align-items: center;
@@ -265,7 +267,10 @@ body {
             flex-direction: row;
         }
         .item-box {
-            width: 430px;
+            width: 500px;
+        }
+        .about-item-box  {
+            flex-direction: row;
         }
         .about h3 {
             font-size: 4rem;
