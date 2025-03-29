@@ -8,12 +8,12 @@
 </head>
 <body class="grid-container">
     <!--navbar section-->
-    <header class="header">
+    <header id="home" class="header">
         <nav class="nav-container">
             <ul class="nav-items">
-                <li><a class="nav-links" href="">home</a></li>
-                <li><a class="nav-links" href="">About</a></li>
-                <li><a class="nav-links" href="">Skills</a></li>
+                <li><a class="nav-links" href="#home">home</a></li>
+                <li><a class="nav-links" href="#about">About</a></li>
+                <li><a class="nav-links" href="#skills">Skills</a></li>
                 <li><a class="nav-links" href="">Projects</a></li>
             </ul>
         </nav>
@@ -43,7 +43,7 @@
         </div>
     </main>
     <!--about me section-->
-    <section class="about">
+    <section id="about" class="about">
         <h2 class="title-about">About Me</h2>
       <div class="section-container">
         <div class="section__pic-container">
@@ -76,8 +76,8 @@
         </div>
       </div>
     </section>
-    <!--projects section-->
-    <section class="projects">
+    <!--skills section-->
+    <section id="skills" class="skills">
         <h2 class="title-about">Skills</h2>
         <div class="experience-details-container">
             <div class="about-containers">
@@ -143,7 +143,7 @@
                 <div class="article-container">
                   <article>
                     <img
-                      src="./assets/icons8-postgresql.svg"
+                      src="./assets/icons/icons8-postgresql.svg"
                       alt="icon of PostgreSQL"
                       class="icon"
                     />
@@ -153,7 +153,7 @@
                     </div>
                   </article>
                   <article>
-                    <img aria-label="icono de nodejs en la seccion de skills" src="assets/logo-nodejs.svg" alt="node logo" class="icon">
+                    <img aria-label="icono de nodejs en la seccion de skills" src="assets/icons/logo-nodejs.svg" alt="node logo" class="icon">
                     <div>
                       <h3>Node JS</h3>
                       <p>Intermediate</p>
@@ -162,7 +162,7 @@
     
                   <article>
                     <img
-                      src="./assets/git-alt-brands.svg"
+                      src="./assets/icons/git-alt-brands.svg"
                       alt="icon of git"
                       class="icon"
                     />
@@ -172,7 +172,7 @@
                     </div>
                   </article>
                   <article>
-                    <img aria-label="icono de react en la seccion de skills" src="assets/react-brands.svg" alt="react logo" class="icon">
+                    <img aria-label="icono de react en la seccion de skills" src="assets/icons/react-brands.svg" alt="react logo" class="icon">
                     <div>
                       <h3>React</h3>
                       <p>Intermediate</p>
@@ -185,7 +185,7 @@
                 <h2 class="experience-sub-title">Additional Skills</h2>
                 <div class="article-container">
                   <article>
-                    <img aria-label="icono de python en la seccion de skills" src="assets/logo-python.svg" alt="python logo" class="icon">
+                    <img aria-label="icono de python en la seccion de skills" src="assets/icons/logo-python.svg" alt="python logo" class="icon">
                     <div>
                       <h3>Python</h3>
                       <p>Advanced</p>
@@ -194,7 +194,7 @@
                   <article>
                     <img
                       aria-label="icono de C++ en la seccion de skills"
-                      src="./assets/icons8-c++.svg"
+                      src="./assets/icons/icons8-c++.svg"
                       alt="c++ logo"
                       class="icon"
                     />
@@ -205,7 +205,7 @@
                   </article>
                   <article>
                     <img
-                      src="./assets/java-brands.svg"
+                      src="./assets/icons/java-brands.svg"
                       alt="icon of java"
                       class="icon"
                     />
@@ -217,7 +217,7 @@
                   <article>
                     <img
                       aria-label="icono de csharp en la seccion de skills"
-                      src="./assets/c-sharp-logo.svg"
+                      src="./assets/icons/c-sharp-logo.svg"
                       alt="C-sharp logo"
                       class="icon"
                     />
@@ -230,6 +230,47 @@
               </div>
             </div>
           </div>
+    </section>
+
+    <!--projects container-->
+    <section class="projects">
+      <h2 class="project-title">Personal Projects</h2>
+      <div class="container-box">
+        <div class="projects-container">
+          <div class="project-items">
+            <div class="container-img">
+              <img src="assets/icons/project-1.webp" alt="">
+              <h2 class="project-subtitle">PixeLap</h2>
+            </div>
+            <div class="btn2-container">
+              <button class="btn2">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-container">
+          <div class="project-items">
+            <div class="container-img">
+              <img src="assets/icons/project-1.webp" alt="">
+              <h2 class="project-subtitle">PixeLap</h2>
+            </div>
+            <div class="btn2-container">
+              <button class="btn2">View</button>
+            </div>
+          </div>
+        </div>
+        <div class="projects-container">
+          <div class="project-items">
+            <div class="container-img">
+              <img src="assets/icons/project-1.webp" alt="">
+              <h2 class="project-subtitle">PixeLap</h2>
+            </div>
+            <div class="btn2-container">
+              <button class="btn2">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="footer">FOOTER</footer>
 </body>
