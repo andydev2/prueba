@@ -214,9 +214,7 @@ body {
     padding: 20px 5px;
   }
   /*projects section*/
-  .big-box {
-    margin: 0 5%;
-  }
+  
   .big-box .project-title, .project-title {
     font-size: 2rem;
     color: #0083c4;
@@ -228,6 +226,7 @@ body {
         align-items: center;
         flex-wrap: wrap;
         gap: 20px;
+        margin: 0 5%;
     }
     .projects-container {
         background-color: #fff9;
