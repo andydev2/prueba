@@ -318,7 +318,6 @@ body {
 
 .grid-container {
     display: grid;
-    gap: 20px;
     grid-template:
     "header" 100px
     "main" auto
@@ -358,7 +357,7 @@ body {
     }
 
     /*for tablets*/
-    @media (min-width: 668px){
+    @media (min-width: 680px){
         .nav-items {
             padding: 13px 10px;
             gap: 10px;
