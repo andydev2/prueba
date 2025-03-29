@@ -215,6 +215,7 @@ body {
   }
   /*projects section*/
   .projects {
+    position: relative;
     margin: 0 5%;
   }
   .big-box .project-title, .project-title {
