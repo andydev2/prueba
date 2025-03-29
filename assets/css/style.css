@@ -175,8 +175,8 @@ body {
     text-align: justify;
     color: #0083c4;
 }
-/*Projects section*/
-.projects {
+/*skills section*/
+.skills {
     margin: 20px;
 }
 .experience-sub-title {
@@ -200,6 +200,7 @@ body {
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around;
+    padding: 10px 15px;
   }
   
   article {
@@ -213,8 +214,62 @@ body {
     cursor: default;
   }
   .details-container {
-    padding: 0 0 20px 0;
+    padding: 20px 5px;
   }
+  /*projects section*/
+  .projects {
+    margin: 5%;
+  }
+  .project-title {
+    font-family: "acorn";
+    font-size: 2rem;
+    color: #0083c4;
+    padding: 20px;
+  }
+  .container-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .projects-container .project-items {
+    background-color: #fff9;
+    padding: 1.6rem;
+    border-radius: 40px;
+    border: 2px solid #6666;
+    flex-grow: 1;
+    flex: 1;
+
+  }
+  .container-img img {
+    width: 90%;
+    height: 90%;
+    border-radius: 40px;
+  }
+  .project-items .btn2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 10px 5px 10px;
+  }
+  .project-subtitle {
+    font-family: "acorn";
+    font-size: 1.6rem;
+    padding-top: 10px;
+  }
+  .btn2-container .btn2 {
+    border: none;
+    padding: 5px 25px;
+    border-radius: 40px;
+    background-image:linear-gradient(to right in oklab, rgb(226, 204, 255) 0px, rgb(181, 192, 255) 100%);
+  }
+
 .grid-container {
     display: grid;
     gap: 20px;
@@ -222,6 +277,7 @@ body {
     "header" 100px
     "main" auto
     "about" auto
+    "skills" auto
     "projects" auto
     "footer" 100px;
     .header {
@@ -233,6 +289,9 @@ body {
     .about {
         grid-area: about;
     }
+    .skills {
+        grid-area: skills;
+    }
     .projects {
         grid-area: projects;
     }
@@ -240,12 +299,23 @@ body {
         grid-area: footer;
         background-color: azure;
     }
+    /*for phones like iphone 5*/
+    @media (min-width: 300px){
+        .nav-links {
+            padding: 5px 12px;
+            font-size: 13px;
+        }
+    }
+
     /*for tablets*/
     @media (min-width: 668px){
         .nav-items {
             padding: 13px 10px;
             gap: 10px;
             margin: 15px;
+        }
+        .home-container {
+            margin: 0 10%;
         }
         .nav-links {
             padding: 5px 30px;
@@ -284,17 +354,24 @@ body {
         .about-containers {
             flex-direction: row;
         }
-        
+        .about {
+            margin: 5%;
+        }
+        /*project section*/
+        .container-box {
+            flex-direction: row;
+        }
     }
     /*for desktop*/
 
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
         .home-container {
             flex-direction: row;
             align-items: center;
             justify-content: center;
             background:none;
             border: none;
+            margin: 5% 0;
         }
         .home-items {
             margin: 4rem;
@@ -328,8 +405,12 @@ body {
             flex-direction: row;
         }
         .about {
-            margin: 0 5%;
+            margin: 8%;
         }
-        
+        /*skills section*/
+        .skills {
+            margin: 10%  10%;
+        }
+        /*project-section*/
     }
 }
