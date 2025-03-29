@@ -214,8 +214,8 @@ body {
     padding: 20px 5px;
   }
   /*projects section*/
-  .projects {
-    margin: 5%;
+  .big-box {
+    margin: 0 5%;
   }
   .big-box .project-title, .project-title {
     font-size: 2rem;
