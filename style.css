@@ -118,7 +118,6 @@ body {
 /*about section*/
 .about {
     padding: 8rem 0;
-    box-sizing: border-box;
 }
 .about .title-about {
     font-size: 2.7rem;
@@ -182,6 +181,7 @@ body {
   }
   .details-container p {
     padding: 10px 0;
+    min-width: 200px ;
   }
 
 
