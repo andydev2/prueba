@@ -1,0 +1,295 @@
+@font-face {
+    font-family: "acorn";
+    src: url(/html-projects/portfolio-main/fonts/acorn-8.woff);
+    font-weight: bold;
+    font-style: bold;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-image:linear-gradient(to right bottom, rgb(255, 198, 199), rgb(188, 198, 237))
+}
+.grid-container > *{
+    text-align: center;
+}
+.nav-container{
+    display: flex;
+    justify-content: center;
+}
+.nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    margin: 10px 10px;
+    background-color: #fff9;
+    border-radius: 50px;
+    position: fixed;
+    padding: 10px 5px;
+    
+}
+.nav-items .nav-links {
+    text-decoration: none;
+    padding: 4px 13px;
+    border-radius: 50px;
+    color: #0083c4;
+    font-weight: 900;
+    transition: 0.3s;
+    text-align: center;
+}
+.nav-items .nav-links:hover {
+    color: #acacac;
+}
+.nav-items .nav-links:active {
+    background-color: #fff9;
+    color: rgb(81, 81, 252);
+}
+/*home-container*/
+.home-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 40px;
+    background-color: #fff9;
+    border: 2px solid #6666;
+    margin: 20px;
+    padding: 20px;
+}
+.home-items img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+}
+.home-items h1 {
+    font-size: 2.3rem;
+    font-family: "acorn", sans-serif;
+    color: #0083c4;
+    padding-bottom: 10px;
+}
+.home-items .title {
+    font-size: 30px;
+    font-weight: 600;
+}
+.home-items p{
+    font-size: 17px;
+    font-weight: 600;
+}
+/*buttons*/
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.btn-container .btn {
+    border: none;
+    padding: 9px 13px;
+    border-radius: 30px;
+    background-image:linear-gradient(to right in oklab, rgb(226, 204, 255) 0px, rgb(181, 192, 255) 100%);
+    transition: 0.3s;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-container .btn:hover {
+    transform: scale(1.05);
+}
+/*social-container*/
+.social-home {
+    margin: 15px;
+}
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 10px;
+}
+.social-container .icon, .icon {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+.icon:hover {
+    transform: scale(1.06);
+}
+
+/*about section*/
+.about {
+    padding: 8rem 0;
+}
+.about .title-about {
+    font-size: 2.7rem;
+    font-family: "acorn";
+    color: #0083c4;
+    padding: 40px 20px;
+}
+.section-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px;
+}
+.section__pic-container .about-pic {
+    width: 200px;
+    height: 200px;
+}
+.about-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-containers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-width: 100%;
+}
+.details-container {
+    background-color: #fff9;
+    border-radius: 40px;
+    width: 100%;
+    border: 2px solid #6666;
+    transition: all ease 0.4s;
+    cursor: pointer;
+}
+.details-container:hover {
+    transform: scale(1.04);
+}
+.details-container .about-text {
+    padding: 10px 30px 20px 30px;
+    text-align: center;
+}
+.text-container p {
+    text-align: justify;
+    color: #0083c4;
+}
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template:
+    "header" 100px
+    "main" auto
+    "about" auto
+    "projects" 200px
+    "footer" 100px;
+    .header {
+        grid-area: header;
+    }
+    .main {
+        grid-area: main;
+    }
+    .about {
+        grid-area: about;
+    }
+    .projects {
+        grid-area: projects;
+        background-color: blueviolet;
+    }
+    .footer {
+        grid-area: footer;
+        background-color: azure;
+    }
+    /*for tablets*/
+    @media (min-width: 668px){
+        .nav-items {
+            padding: 13px 10px;
+            gap: 10px;
+            margin: 15px;
+        }
+        .nav-links {
+            padding: 5px 30px;
+        }
+        .home-container img {
+            width: 250px;
+            height: 250px;
+        }
+        .home-items h1 {
+            font-size: 3.3rem;
+        }
+        .home-items .title {
+            font-size: 40px;
+        }
+        .home-items p{
+            font-size: 27px;
+        }
+        .btn-container .btn {
+            padding: 11px 25px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        /*social container*/
+        .social-container .icon {
+            width: 33px;
+            height: 33px;
+        }
+        /*about container*/
+        .section__pic-container .about-pic {
+            width: 300px;
+            height: 300px;
+        }
+        .about .title-about {
+            font-size: 3.9rem;
+        }
+        .about-containers {
+            flex-direction: row;
+        }
+        
+    }
+    /*for desktop*/
+
+    @media (min-width: 992px) {
+        .home-container {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background:none;
+            border: none;
+        }
+        .home-items {
+            margin: 4rem;
+        }
+        .home-items img {
+            width: 300px;
+            height: 300px;
+        }
+        .home-items h1 {
+            font-size: 4.5rem;
+        }
+        .home-items .title {
+            font-size: 3.3rem;
+        }
+        .home-items p{
+            font-size: 1.8rem;
+        }
+        .social-home {
+            padding: 1.2rem;
+        }
+        /*about section*/
+        .section__pic-container {
+            width: 400px;
+            height: 400px;
+        }
+        .section__pic-container .about-pic{
+            width: 350px;
+            height: 350px;
+        }
+        .section-container {
+            flex-direction: row;
+        }
+        .about {
+            margin: 0 5%;
+        }
+        
+    }
+}
