@@ -409,7 +409,7 @@ body {
         }
         /*project section*/
         .projects {
-            margin: 3%;
+            margin: 5%;
         }
 
         /*form section*/
@@ -477,7 +477,7 @@ body {
             padding-top: 140px;
         }
         .projects {
-            margin: 10%;
+            margin: 0 10%;
         }
         .project-title {
             font-size: 4rem;
