@@ -63,10 +63,11 @@ body {
     margin: 20px;
     padding: 20px;
 }
-.home-items img {
+.home-items .pic-home {
     width: 180px;
     height: 180px;
     border-radius: 100%;
+    border: 2px solid #6668;
 }
 .home-items h1 {
     font-size: 2.3rem;
@@ -124,7 +125,7 @@ body {
 .about {
     padding: 8rem 0;
 }
-.about .title-about {
+.about .title-about, .title-about {
     font-size: 2.7rem;
     font-family: "acorn";
     color: #0083c4;
@@ -174,6 +175,46 @@ body {
     text-align: justify;
     color: #0083c4;
 }
+/*Projects section*/
+.projects {
+    margin: 20px;
+}
+.experience-sub-title {
+    color: #0083c4;
+    font-family: "acorn";
+    font-weight: bold;
+    font-size: 1.34rem;
+    margin: 1rem 1rem 2rem 1rem
+  }
+  
+  .experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+  }
+  
+  article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+  
+  article .icon {
+    cursor: default;
+  }
+  .details-container {
+    padding: 0 0 20px 0;
+  }
 .grid-container {
     display: grid;
     gap: 20px;
@@ -181,7 +222,7 @@ body {
     "header" 100px
     "main" auto
     "about" auto
-    "projects" 200px
+    "projects" auto
     "footer" 100px;
     .header {
         grid-area: header;
@@ -194,7 +235,6 @@ body {
     }
     .projects {
         grid-area: projects;
-        background-color: blueviolet;
     }
     .footer {
         grid-area: footer;
@@ -238,7 +278,7 @@ body {
             width: 300px;
             height: 300px;
         }
-        .about .title-about {
+        .about .title-about, .title-about {
             font-size: 3.9rem;
         }
         .about-containers {
