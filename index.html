@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Andy Mendoza</title>
 </head>
 <body class="grid-container">
     <!--navbar section-->
     <header id="home" class="header">
         <nav class="nav-container">
             <ul class="nav-items">
-                <li><a class="nav-links" href="#home">home</a></li>
-                <li><a class="nav-links" href="#about">About</a></li>
-                <li><a class="nav-links" href="#skills">Skills</a></li>
-                <li><a class="nav-links" href="">Projects</a></li>
+                <li><a aria-label="este boton te llevara a la seccion de inicio" class="nav-links" href="#home">home</a></li>
+                <li><a aria-label="este boton te llevara a la seccion sobre mi" class="nav-links" href="#about">About</a></li>
+                <li><a aria-label="este boton te llevara a la seccion de skills" class="nav-links" href="#skills">Skills</a></li>
+                <li><a aria-label="este boton te llevara a la seccion de proyectos" class="nav-links" href="#projects">Projects</a></li>
             </ul>
         </nav>
     </header>
@@ -22,7 +22,7 @@
     <main class="main">
         <div class="home-container">
             <div class="home-items">
-                <img class="pic-home" src="assets/icons/profile-pic.webp" alt="">
+                <img class="pic-home" src="assets/icons/profile-pic.jpg" alt="">
             </div>
             <div class="home-items">
                 <p class="title">Hi, Im</p>
@@ -30,13 +30,13 @@
                 <p>Frontend Developer</p>
                 <div class="social-home">
                     <div class="btn-container">
-                        <button class="btn">Download Cv</button>
-                        <button class="btn">Contact info</button>
+                        <button aria-label="este boton te descargara mi curriculum" class="btn">Download Cv</button>
+                        <button aria-label="este boton te llevara a la seccion de contactos" class="btn">Contact info</button>
                     </div>
                     <div class="social-container">
-                        <a href="#"><img src="assets/icons/logo-github.svg" alt="" class="icon"></a>
-                        <a href="#"><img src="assets/icons/logo-instagram.svg" alt="" class="icon"></a>
-                        <a href="#"><img src="assets/icons/whatsapp-brands.svg" alt="" class="icon"></a>
+                        <a href="#"><img src="assets/icons/logo-github.svg" alt="logo de github, te llevara a mi perfil de github" class="icon"></a>
+                        <a href="#"><img src="assets/icons/logo-instagram.svg" alt="logo de instagram, te llevara a mi perfil de instagram" class="icon"></a>
+                        <a href="#"><img src="assets/icons/whatsapp-brands.svg" alt="logo de whatsapp, te lleva a mi contacto de whatsapp" class="icon"></a>
                     </div>
                 </div>
             </div>
@@ -233,45 +233,67 @@
     </section>
 
     <!--projects container-->
-    <section class="projects">
-      <h2 class="project-title">Personal Projects</h2>
-      <div class="container-box">
-        <div class="projects-container">
-          <div class="project-items">
-            <div class="container-img">
-              <img src="assets/icons/project-1.webp" alt="">
-              <h2 class="project-subtitle">PixeLap</h2>
-            </div>
-            <div class="btn2-container">
-              <button class="btn2">View</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="projects-container">
-          <div class="project-items">
-            <div class="container-img">
-              <img src="assets/icons/project-1.webp" alt="">
-              <h2 class="project-subtitle">PixeLap</h2>
-            </div>
-            <div class="btn2-container">
-              <button class="btn2">View</button>
+    <section id="projects" class="projects">
+      <div class="big-box">
+        <h2 class="project-title">Personal Projects</h2>
+        <div class="container-box">
+          <div class="projects-container">
+            <div class="project-items">
+              <div class="container-img">
+                <img src="assets/icons/project-1.webp" alt="imagen de pixelap, proyecto numero 1">
+                <h2 class="project-subtitle">PixeLap</h2>
+              </div>
+              <div class="btn2-container">
+                <button aria-label="este boton te lleva a la pagina de pixelap" class="btn2">View</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="projects-container">
-          <div class="project-items">
-            <div class="container-img">
-              <img src="assets/icons/project-1.webp" alt="">
-              <h2 class="project-subtitle">PixeLap</h2>
+  
+          <div class="projects-container">
+            <div class="project-items">
+              <div class="container-img">
+                <img src="assets/icons/project-2.webp" alt="imagen de proyecto weather app, proyecto numero 2">
+                <h2 class="project-subtitle">Weather App</h2>
+              </div>
+              <div class="btn2-container">
+                <button aria-label="este boton te lleva a la pagina de weather app" class="btn2">View</button>
+              </div>
             </div>
-            <div class="btn2-container">
-              <button class="btn2">View</button>
+          </div>
+          <div class="projects-container">
+            <div class="project-items">
+              <div class="container-img">
+                <img src="assets/icons/cooming soon.webp" alt="imagen de cooming soon">
+                <h2 class="project-subtitle">COOMING SOON</h2>
+              </div>
+              <div class="btn2-container">
+                <button aria-label="este boton te lleva a la web del proyecto" class="btn2">View</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!--form section-->
+    <form aria-label="form" action="https://formspree.io/f/xldjwlkk" method="post" class="form">
+      <h2 class="project-title">Contact Me</h2>
+      <div class="form-container">
+        
+        <div class="form-items">
+          <div class="icono-form">
+            <img src="assets/icons/gojo.svg" alt="">
+          </div>
+          <label for="name">Name</label>
+          <input name="name" type="text" placeholder="Andy Mendoza" id="name" required minlength="4">
+          <label for="email">Email</label>
+          <input name="email" type="email" placeholder="Andy@gmail.com" id="email" required>
+          <label for="message">Subject</label>
+          <textarea name="message" id="message" placeholder="Write a message."></textarea>
+
+          <input class="button" value="Send" type="submit" name="send" id="send">
+        </div>
+      </div>
+    </form>
     <footer class="footer">FOOTER</footer>
 </body>
 </html>
