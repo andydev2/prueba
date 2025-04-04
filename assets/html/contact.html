@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <script defer src="../js/index.js"></script>
+    <title>elizabeth</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+          <a href="../../index.html" class="logo nav-link">Velvet</a>
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <img class="icon" src="../icons/bars-solid.svg" alt="icono de abrir menu">
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="../../index.html" class="nav-menu-link nav-link">Inicio</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="../html/about.html" class="nav-menu-link nav-link">Sobre mi</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="../html/contact.html" class="nav-menu-link nav-link">Contacto</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="../html/orderOnline.html" class="nav-menu-link nav-link">Mis pasteles</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <form id="contact" aria-label="formulario" action="https://formspree.io/f/xldjwlkk" method="post" class="form">
+          <div class="box">
+            <h2 class="contact-title">CONTACTAME</h2>
+            <p class="contact-text">
+              ¿Estás buscando un pastel único para una ocasión especial?
+              Aquí puedes contarme tu idea, los sabores que más te gustan, el estilo que imaginas y todos esos pequeños detalles que harán tu pastel inolvidable.
+
+              Completa el formulario y me pondré en contacto contigo para diseñar tu pastel personalizado, hecho completamente a mano y con mucho amor.
+              Una vez esté todo definido, podrás realizar tu compra fácilmente en línea y dejar el resto en mis manos.
+
+              Estoy emocionada por crear algo hermoso y delicioso para ti. 💌
+            </p>
+            <div class="form-container">
+              <div class="form-items">
+                <label for="name">Nombre y Apellidos</label>
+                <input name="name" type="text" placeholder="Sonia Garcia" id="name" required minlength="4">
+                <label for="email">Correo Electronico</label>
+                <input name="email" type="email" placeholder="ejemplo@gmail.com" id="email" required>
+                <label for="number">Numero Celular</label>
+                <input name="number" type="number" placeholder="09938832246" id="number" required>
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" placeholder="Escribe un mensaje" maxlength="140"></textarea>
+    
+                <input class="button" value="ENVIAR" type="submit" name="send" id="send">
+              </div>
+            </div>
+          </div>
+          
+        </form>
+      </main>
+      <!--footer section-->
+    <footer id="footer">
+      <div class="logo-footer">
+        <h2 class="logo">Velvet</h2>
+        <p>Copyright © 2025 All Rights Reserved.</p>
+        <p class="logo-text">Made with ❤️ by <a href="#">Andy Mendoza</a></p>
+      </div>
+      <div class="footer-box">
+        <div class="footer-container">
+          <div class="footer-items">
+            <h2>Menú</h2>
+            <a href="#">
+              Inicio
+            </a>
+            <a href="#">
+              Sobre mí
+            </a>
+            <a href="#">
+              Contacto
+            </a>
+            <a href="#">
+              Ver productos
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-container">
+          <div class="footer-items">
+            <h2>Servicios</h2>
+            <a href="#">
+              Tortas
+            </a>
+            <a href="#">
+              Cupcakes
+            </a>
+            <a href="#">
+              Cokies
+            </a>
+            <a href="#">
+              Mesas
+              Dulces
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-container">
+          <div class="footer-items">
+            <h2>Sígueme</h2>
+            <a href="#">
+              Instagram
+            </a>
+            <a href="#">
+              X
+            </a>
+            <a href="#">
+              Facebook
+            </a>
+            <a href="#">
+              Linkedin
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+
+    </footer>
+</body>
+</html>
